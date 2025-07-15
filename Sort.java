@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class SortandCommon{    
+class Sort{    
     public static void main(String [] args){
             int [] arr = new int [20];
             int num;
@@ -17,7 +17,7 @@ class SortandCommon{
             //sort
         for (int i=0;i<num;i++){
             for (int j=i+1;j<num;j++){
-                if(arr[i]>arr[j]){
+                if(arr[i]<arr[j]){
                     int temp = arr[i];
                     arr[i] = arr[j];
                     arr[j] = temp;
@@ -27,23 +27,7 @@ class SortandCommon{
             System.out.println("Sorted Array:");
             for(int i=0;i<num;i++){
                 System.out.print(arr[i] + " ");
-            }
-
-            int test = 0;
-            for(int i=0;i<num;i++){
-                for(int j=i+1;j<num;j++){
-                    if(arr[i]!=test){
-                    if(arr[i]==arr[j]){
-                        System.out.println("Common Element: " + arr[i]);
-                        test = arr[i];
-                    }
-                    
-                    }else{
-                    continue;
-                }
-            }
-                
-                }
+            }    
                 
                 }   
             }
