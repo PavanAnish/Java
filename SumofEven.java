@@ -11,16 +11,16 @@ class SumOfEven{
                     System.out.print("Enter number");
                     arr[i] = sc.nextInt();
             }
-
+            int sum = 0;
             System.out.print("");
             for(int i=0;i<num;i++){
                 if (arr[i]%2==0){
-                    System.out.println(arr[i]);
+                    sum+= arr[i];
                 }
                 
                     
             }
-
+            System.out.println(sum);
         
             
             
